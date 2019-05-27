@@ -11,6 +11,7 @@
 #define ENTER 13
 #define SPACE 32
 
+
 void gotoxy(int x, int y);
 void HideCursor();
 void SetColor(int color);
@@ -23,3 +24,5 @@ void back_screen();
 void back_screen2();
 void change();
 unsigned _stdcall Thread_change_screen(void *arg);
+
+void CursorView(char show);
