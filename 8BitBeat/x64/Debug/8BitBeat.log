@@ -1,3 +1,5 @@
 ﻿  Select_Music.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\select_music.c(16): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\select_music.c(18): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\select_music.c(211): warning C4113: 'void (__cdecl *)()'은(는) '_beginthreadex_proc_type'과(와) 매개 변수 목록이 다릅니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\select_music.c(211): warning C4133: '함수': 'void (__cdecl *)()'과(와) '_beginthreadex_proc_type' 사이의 형식이 호환되지 않습니다.
   8BitBeat.vcxproj -> C:\Users\Administrator\Desktop\8bitbeat\x64\Debug\8BitBeat.exe

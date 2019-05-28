@@ -19,9 +19,10 @@ int main()
 	//change();
 	//back_screen();
 	//back_screen2();
-	_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
-	choose_music();
-	//choose_redflavor();
+	/*_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
+	choose_music();*/
+	music_comeon();
+	
 	system("pause>null");
 
 	return 0;
