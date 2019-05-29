@@ -8,6 +8,7 @@
 #define Red_flavor "C:\\Users\\Administrator\\Desktop\\RedFlavor.wav"
 #define Fake_love "C:\\Users\\Administrator\\Desktop\\FakeLove.wav"
 #define DDDD "C:\\Users\\Administrator\\Desktop\\DDDD.wav"
+#define traap "C:\\Users\\Administrator\\Desktop\\small.wav"
 
 typedef struct Music {
 

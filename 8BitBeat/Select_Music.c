@@ -15,10 +15,7 @@ char num = 0;
 void choose_music() {
 
 	while(1){
-		num = getch();
 		
-		if (num == LEFT) { music_value--; }
-		else if (num == RIGHT) { music_value++; }
 
 	modular = music_value % 3;
 	
@@ -34,6 +31,11 @@ void choose_music() {
 		choose_fakelove();
 		break;
 	}
+
+			num = getch();
+
+			if (num == LEFT) { music_value--; }
+			else if (num == RIGHT) { music_value++; }
 	}
 	}
 }

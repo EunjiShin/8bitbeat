@@ -1,4 +1,5 @@
-#include "common.h"// ingame용 헤더 나중에 만들기
+#include "Common.h"// ingame용 헤더 나중에 만들기
+#include "Music.h"
 
 void change_screen() {
 	system("mode con: cols=135 lines=36");
@@ -50,9 +51,11 @@ void back_screen() {
 }
 
 void change() {
-
-	_beginthreadex(NULL, 0, Thread_change_screen, 0, 0, NULL);
-	back_screen2();
+	PlaySound(TEXT(trap), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	while (1) {
+		_beginthreadex(NULL, 0, Thread_change_screen, 0, 0, NULL);
+		back_screen2();
+	}
 	//back_screen();   // 스레드로 배경 + 공
 }
 
@@ -61,15 +64,15 @@ unsigned _stdcall Thread_change_screen(void *arg) {
 	char ch1[3] = "○";
 	int y, check = 35;
 
-	do {
+	//do {
 		for (y = 36 - check; y < 35; y += 1) {
 			gotoxy(69, y);
 			printf("%s", ch1);
-			Sleep(50);
+			Sleep(70);
 			gotoxy(69, y);
 			printf(" ");
 		}
-	} while (check != 1);
+	//} while (check != 1);
 
 
 

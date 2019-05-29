@@ -16,12 +16,12 @@ int main()
 
 	CursorView(0);
 	//change_screen();
-	//change();
+	change();
 	//back_screen();
 	//back_screen2();
 	/*_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
 	choose_music();*/
-	music_comeon();
+	//music_comeon();
 	
 	system("pause>null");
 
