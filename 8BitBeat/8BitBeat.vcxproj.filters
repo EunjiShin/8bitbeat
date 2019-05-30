@@ -45,6 +45,9 @@
     <ClCompile Include="change.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="own_character.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Title.h">
@@ -62,5 +65,16 @@
     <ClInclude Include="Music.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\DDDD.wav">
+      <Filter>소스 파일</Filter>
+    </Media>
+    <Media Include="..\..\FakeLove.wav">
+      <Filter>소스 파일</Filter>
+    </Media>
+    <Media Include="..\..\RedFlavor.wav">
+      <Filter>소스 파일</Filter>
+    </Media>
   </ItemGroup>
 </Project>

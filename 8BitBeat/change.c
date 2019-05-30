@@ -51,7 +51,7 @@ void back_screen() {
 }
 
 void change() {
-	PlaySound(TEXT(trap), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	PlaySound(TEXT(traap), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 	while (1) {
 		_beginthreadex(NULL, 0, Thread_change_screen, 0, 0, NULL);
 		back_screen2();

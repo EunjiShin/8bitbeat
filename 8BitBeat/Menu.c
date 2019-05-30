@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Music.h"
 #include "Menu.h"
 
 void M_line_Print()		// menu box Ãâ·Â
@@ -172,7 +172,7 @@ void Start_Game()
 {
 	char ch;
 	int music = 100;
-	default_screen();
+	music_comeon();
 	do {
 		ch = getch();
 		switch (ch)

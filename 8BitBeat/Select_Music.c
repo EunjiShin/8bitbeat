@@ -7,37 +7,40 @@ music DDuduDDudu = { "剽舒剽舒          ", "綰楷ё觼     ", 3 };
 music FakeLove = { "fake love         ", "BTS      ", 3 };
 
 int equalizer_count = 0;
-char pic[15][15] = { 0, };  // 檜蠣塭檜盪
+//char pic[15][15] = { 0, };  // 檜蠣塭檜盪
 int music_value = 99; // 喻楚 摹鷗衛 餌辨 滲熱
 int modular = 0;
 char num = 0;
 
+int flag;
+
 void choose_music() {
 
-	while(1){
-		
+	do
+	{
 
-	modular = music_value % 3;
-	
-	switch (modular) {
-	case 0: {
-		choose_redflavor();
-		break; }
-	case 1: {
-		choose_dddd();
-		break;
-	}
-	case 2: {
-		choose_fakelove();
-		break;
-	}
 
-			num = getch();
+		modular = music_value % 3;
 
-			if (num == LEFT) { music_value--; }
-			else if (num == RIGHT) { music_value++; }
-	}
-	}
+		switch (modular) {
+		case 0: {
+			choose_redflavor();
+			break; }
+		case 1: {
+			choose_dddd();
+			break;
+		}
+		case 2: {
+			choose_fakelove();
+			break;
+		}
+
+				num = getch();
+
+				if (num == LEFT) { music_value--; }
+				else if (num == RIGHT) { music_value++; }
+		}
+	} while (num != ESC);
 }
 
 void default_screen() {
@@ -68,7 +71,8 @@ void default_screen() {
 	printf("戌收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收戎");
 
 	
-	draw_equalizer(&equalizer_count, pic);
+	draw_equalizer(&equalizer_count);
+
 }
 void choose_redflavor() {
 	PlaySound(TEXT(Red_flavor), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
@@ -145,8 +149,9 @@ void choose_dddd() {
 	return;
 }
 
-void draw_equalizer(int *equalizer_count, char pic[][15])
+void draw_equalizer(int *equalizer_count)
 {
+	char pic[15][15] = { 0, };  // 檜蠣塭檜盪
 	int x = 55, y = 15, i, j, k;
 
 	while (1) {
@@ -195,6 +200,7 @@ void draw_equalizer(int *equalizer_count, char pic[][15])
 			y += 1;
 
 		}
+
 		Sleep(20);
 		*equalizer_count = *equalizer_count + 1;
 	}
@@ -202,14 +208,15 @@ void draw_equalizer(int *equalizer_count, char pic[][15])
 	return;
 }
 
-void equalizer() {
-	
-		draw_equalizer(&equalizer_count, pic);
-	
-}
-
 
 void music_comeon() {
+	
 	_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
 	choose_music();
+
+	if (kbhit() == 1) {
+		_endthread();
+		system("cls");
+		printf("寰喟寰喟\n");
+	}
 }

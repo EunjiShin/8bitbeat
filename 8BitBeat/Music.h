@@ -5,10 +5,10 @@
 #include <mmsystem.h>
 #pragma comment(lib, "winmm.lib")
 
-#define Red_flavor "C:\\Users\\Administrator\\Desktop\\RedFlavor.wav"
-#define Fake_love "C:\\Users\\Administrator\\Desktop\\FakeLove.wav"
-#define DDDD "C:\\Users\\Administrator\\Desktop\\DDDD.wav"
-#define traap "C:\\Users\\Administrator\\Desktop\\small.wav"
+#define Red_flavor "RedFlavor.wav"
+#define Fake_love "FakeLove.wav"
+#define DDDD "DDDD.wav"
+#define traap "trap.wav"
 
 typedef struct Music {
 
@@ -30,4 +30,4 @@ void choose_dddd();
 
 void music_comeon();
 void equalizer();
-void draw_equalizer(int *equalizer_count, char pic[][15]);
+void draw_equalizer(int *equalizer_count);
