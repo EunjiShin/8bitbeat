@@ -22,8 +22,8 @@ int main()
 	/*_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
 	choose_music();*/
 	//music_comeon();
-	add_menu();
-	//BP_flame();
+	//add_menu();
+	ready_number();
 	system("pause>null");
 
 	return 0;
