@@ -36,14 +36,15 @@ void control_menu(char choice, int *height);
 
 
 void BP_frame();
+void BP_frame2();
 void BP_Print();
-void BP_Info(int i, int x, int y);
+
 
 
 void RV_frame();
 void RV_frame2();
 void RV_Print();
-void RV_Info(int i, int x, int y);
+
 
 
 
@@ -51,6 +52,7 @@ void BTS_frame();
 void BTS_frame2();
 void BTS_frame3();
 void BTS_Print();
-void BTS_Info(int i, int x, int y);
+
 
 void print_question(int x, int y);
+void Info(int i, int x, int y, CH *group);

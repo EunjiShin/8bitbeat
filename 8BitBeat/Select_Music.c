@@ -71,7 +71,7 @@ void default_screen() {
 	printf("戌收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收戎");
 
 	
-	draw_equalizer(&equalizer_count);
+	//draw_equalizer(&equalizer_count);
 
 }
 void choose_redflavor() {
@@ -212,7 +212,9 @@ void draw_equalizer(int *equalizer_count)
 void music_comeon() {
 	
 	_beginthreadex(NULL, 0, default_screen, 0, 0, NULL);
-	choose_music();
+	_beginthreadex(NULL, 0, choose_music, 0, 0, NULL);
+	_beginthreadex(NULL, 0, draw_equalizer, &equalizer_count, 0, NULL);
+
 
 	if (kbhit() == 1) {
 		_endthread();

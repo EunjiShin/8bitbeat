@@ -5,6 +5,7 @@
 void add_menu() {
 	int num;
 	int num2;
+	int key;
 
 			Print_Box(); // 메뉴박스
 			Print_Menu();  // 메뉴 출력
@@ -12,7 +13,7 @@ void add_menu() {
 			switch (num)	// 각 메뉴 선택에 맞는 동작 실행
 			{
 			case 1:
-				BP_Print();
+					BP_frame();
 				break;
 			case 2:
 				RV_frame();
@@ -129,14 +130,14 @@ int Choice_Menu() {
 void BP_frame() {
 	system("mode con: cols=180 lines=50");
 	int j, i;
-
+	char key;
+	int k;
+	int height = 13;
 	system("cls");
 
 	gotoxy(2, 1);
 	printf("==================================================================================================================================================================================");
 
-	gotoxy(2, 25);                                               
-	printf("==================================================================================================================================================================================");
 
 	gotoxy(2, 50);
 	printf("==================================================================================================================================================================================");
@@ -144,56 +145,92 @@ void BP_frame() {
 	{
 		for (i = 0; i < 48; i++)
 		{
-			gotoxy(j*89+1, i+2);                                      
+			gotoxy(j * 89 + 1, i + 2);
 			printf("||");
+		}
+	}
+
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(30, height);
+		printf("%s", blackpink[3].member_image[k]);
+		height++;
+	}
+	Info(0, 50, 40, blackpink);
+
+	height = 13;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(120, height);
+		printf("%s", blackpink[4].member_image[k]);
+		height++;
+	}
+	Info(1, 140, 40, blackpink);
+
+	while (1) {
+		key = getch();
+		if (key == RIGHT) {
+			BP_frame2();
+		}
+	}
+
+
+}
+
+void BP_frame2() {
+	system("mode con: cols=180 lines=50");
+	int j, i;
+	char key;
+	int k;
+	int height = 13;
+	system("cls");
+
+	gotoxy(2, 1);
+	printf("==================================================================================================================================================================================");
+
+
+	gotoxy(2, 50);
+	printf("==================================================================================================================================================================================");
+	for (j = 0; j < 3; j++)
+	{
+		for (i = 0; i < 48; i++)
+		{
+			gotoxy(j * 89 + 1, i + 2);
+			printf("||");
+		}
+	}
+
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(30, height);
+		printf("%s", blackpink[2].member_image[k]);
+		height++;
+	}
+	Info(3, 50, 40, blackpink);
+
+	height = 13;
+
+	print_question(120, height);
+
+
+	while (1) {
+		key = getch();
+		if (key == LEFT) {
+			BP_frame();
 		}
 	}
 
 }
 
-void BP_Print() {
-	int k;
-	int height = 3;
-	BP_frame();
-	BP_Info(0, 25, 3);
-	gotoxy(34, height);
 
-		for (k = 0; k < 40; k++) {
-			gotoxy(34, height);
-			printf("%s", blackpink[0].member_image[k]);
-			height++;
-		}
-
-		height = 3;
-		BP_Info(1, 110, 3);
-		gotoxy(120, height);
-		for (k = 0; k < 40; k++) {
-			gotoxy(120, height);
-			printf("%s", blackpink[1].member_image[k]);
-			height++;
-		}
-
-		height = 27;
-		BP_Info(2, 25, 27);
-		gotoxy(34, height);
-		for (k = 0; k < 40; k++) {
-			gotoxy(34, height);
-			printf("%s", blackpink[2].member_image[k]);
-			height++;
-		}
-
-		height = 26;
-		int x = 115;
-		print_question(x, height);
-
-		system("pause>null");
-}
-
-
-void BP_Info(int i, int x, int y){
-	gotoxy(x - 10, y);
-	printf("%s", blackpink[i].name);
-}
 
 
 void print_question(int x, int y) {
@@ -252,6 +289,8 @@ void RV_frame() {
 	system("mode con: cols=180 lines=50");
 	int j, i;
 	char key;
+	int k;
+	int height = 15;
 
 	system("cls");
 
@@ -270,6 +309,37 @@ void RV_frame() {
 		}
 	}
 
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(17, height);
+		printf("%s", redvelvet[0].member_image[k]);
+		height++;
+	}
+	Info(0, 30, 40, redvelvet);
+
+	height = 15;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(70, height);
+		printf("%s", redvelvet[1].member_image[k]);
+		height++;
+	}
+	Info(1, 90, 40, redvelvet);
+
+	height = 15;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(133, height);
+		printf("%s", redvelvet[2].member_image[k]);
+		height++;
+	}
+	Info(2, 150, 40, redvelvet);
+
 	while (1) {
 		key = getch();
 		if (key == RIGHT) {
@@ -279,10 +349,12 @@ void RV_frame() {
 
 }
 
-void RV_frame2() {
+void RV_frame2(){
 	system("mode con: cols=180 lines=50");
 	int j, i;
 	char key;
+	int k;
+	int height = 13;
 	system("cls");
 
 	gotoxy(2, 1);
@@ -299,6 +371,27 @@ void RV_frame2() {
 			printf("||");
 		}
 	}
+
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(30, height);
+		printf("%s", redvelvet[3].member_image[k]);
+		height++;
+	}
+	Info(3, 45, 40, redvelvet);
+
+	height = 13;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(120, height);
+		printf("%s", redvelvet[4].member_image[k]);
+		height++;
+	}
+	Info(4, 135, 40, redvelvet);
 	
 	while (1) {
 		key = getch();
@@ -310,10 +403,14 @@ void RV_frame2() {
 }
 
 
+
+
 void BTS_frame() {
 	system("mode con: cols=180 lines=50");
 	int j, i;
 	char key;
+	int k;
+	int height = 15;
 
 	system("cls");
 
@@ -331,6 +428,34 @@ void BTS_frame() {
 			printf("||");
 		}
 	}
+
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(17, height);
+		printf("%s", bts[0].member_image[k]);
+		height++;
+	}
+	Info(0, 30, 40, bts);
+
+	height = 15;
+	for (k = 0; k < 40; k++) {
+		gotoxy(70, height);
+		printf("%s", bts[1].member_image[k]);
+		height++;
+	}
+	Info(1, 90, 40, bts);
+
+	height = 15;
+	for (k = 0; k < 40; k++) {
+		gotoxy(128, height);
+		printf("%s", bts[2].member_image[k]);
+		height++;
+	}
+	Info(2, 150, 40, bts);
 
 	while (1) {
 		key = getch();
@@ -345,6 +470,8 @@ void BTS_frame2() {
 	system("mode con: cols=180 lines=50");
 	int j, i;
 	char key;
+	int k; 
+	int height = 15;
 	system("cls");
 
 	gotoxy(2, 1);
@@ -361,6 +488,28 @@ void BTS_frame2() {
 			printf("||");
 		}
 	}
+
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(25, height);
+		printf("%s", bts[3].member_image[k]);
+		height++;
+	}
+	Info(3, 45, 40, bts);
+
+	height = 13;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(120, height);
+		printf("%s", bts[4].member_image[k]);
+		height++;
+	}
+	Info(4, 135, 40, bts);
+
 
 	while (1) {
 		key = getch();
@@ -378,6 +527,9 @@ void BTS_frame3() {
 	system("mode con: cols=180 lines=50");
 	int j, i;
 	char key;
+	int k;
+	int height = 15;
+
 	system("cls");
 
 	gotoxy(2, 1);
@@ -395,6 +547,27 @@ void BTS_frame3() {
 		}
 	}
 
+	gotoxy(4, 25);
+	printf("<");
+	gotoxy(176, 25);
+	printf(">");
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(30, height);
+		printf("%s", bts[5].member_image[k]);
+		height++;
+	}
+	Info(5, 45, 40, bts);
+
+	height = 13;
+
+	for (k = 0; k < 40; k++) {
+		gotoxy(120, height);
+		printf("%s", bts[6].member_image[k]);
+		height++;
+	}
+	Info(6, 135, 40, bts);
+
 	while (1) {
 		key = getch();
 		if (key == LEFT) {
@@ -402,4 +575,10 @@ void BTS_frame3() {
 		}
 	}
 
+}
+
+
+void Info(int i, int x, int y, CH *group) {
+	gotoxy(x, y + 3);
+	printf("%s", group[i].name);
 }
