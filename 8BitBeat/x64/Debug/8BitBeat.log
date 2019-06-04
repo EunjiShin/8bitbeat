@@ -1,38 +1,4 @@
-﻿  Character.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(469): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(479): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(489): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
-  Esc.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\esc.c(42): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-  Menu.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(88): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(114): warning C4013: 'test'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(193): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(210): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(219): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-  Title_Print.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\title_print.c(72): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\title_print.c(74): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-  board.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\board.c(9): warning C4013: 'gotoxy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  ingame.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(119): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(139): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(114): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(116): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(175): warning C4098: 'over_check': 'void' 함수에서 값을 반환하고 있습니다.
-  main.c
-c:\users\administrator\desktop\8bitbeat\8bitbeat\main.c(10): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
-  own_character.c
+﻿  own_character.c
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(11): warning C4101: 'num2' :참조되지 않은 지역 변수입니다.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(12): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(121): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
@@ -53,6 +19,27 @@ c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(676): warning C
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(695): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(696): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
-  코드를 생성하고 있습니다...
-c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(141): warning C4716: 'print_map': 값을 반환해야 합니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(771): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(778): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(785): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(792): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(801): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(808): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(815): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(822): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(829): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(836): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(843): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(848): warning C4715: 'get_character': 모든 제어 경로에서 값을 반환하지는 않습니다.
   8BitBeat.vcxproj -> C:\Users\Administrator\Desktop\8bitbeat\x64\Debug\8BitBeat.exe

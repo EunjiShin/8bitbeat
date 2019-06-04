@@ -54,6 +54,8 @@ int e_move_arrow()		//화살표 동작 중 Enter 눌리면 menu값 반환
 void is_ESC()
 {
 	PlaySound(NULL, 0, 0);
+	system("mode con: cols=180 lines=50");
+	changeFsize(1.5);
 	int menu;
 	M_line_Print();
 	ESC_Print();

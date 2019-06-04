@@ -116,7 +116,7 @@ int print_map(char* musicName, int part, int trapFlag, double *TotalScore)
 			ch = getch();
 			if (ch == ESC)
 			{
-				changeFsize(1.5);
+				system("cls");
 				is_ESC();
 			}
 			if (ch == SPACE)
@@ -130,7 +130,7 @@ int print_map(char* musicName, int part, int trapFlag, double *TotalScore)
 			y++;
 		}
 		Sleep(DDDD_DELAY);
-		over_check(y, mapDelay);
+		over_check(y, mapDelay, score+(*TotalScore));
 		mapDelay++;
 	}
 	*TotalScore += score;
@@ -158,8 +158,10 @@ double score_check(double score, int trapFlag, int delaytime)
 	return score;
 }
 
-void over_check(int y, int delay)
+void over_check(int y, int delay, double score)
 {
+	OWN *temp;
+	temp = (char*)malloc(sizeof(char*) * 4);
 	int overFlag = 0;
 	if (map[y - 2][delay] == 1)
 		overFlag++;
@@ -167,10 +169,12 @@ void over_check(int y, int delay)
 		overFlag++;
 
 	if (overFlag)
-	{
+	{   
+		*temp = get_character(score, blackpink, 0); // 임의로 넣어둔 것! blackpink랑 0은 노래 달라질때 bts랑 1로 바꿔야함.
 		system("cls");
 		//캐릭터 얻는 화면으로 이동
+		add_c(temp);
 		exit(1);
 	}
-	return 0;
+	return;
 }

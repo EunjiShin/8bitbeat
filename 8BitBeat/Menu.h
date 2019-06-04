@@ -18,7 +18,6 @@ int e_move_arrow();
 void is_ESC();
 
 void Print_info();
-void Start_Game();
 void Print_Lank();
 void Print_character();
 

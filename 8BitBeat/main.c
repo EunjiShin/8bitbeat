@@ -15,10 +15,14 @@ int main()
 	printf("게임끝!\n");
 	images(0, 0, "images");*/
 
-	CursorView(0);
+
 	make_own();
+	CursorView(0);
 	Title_Print();
 	Menu();
+
+
+
 	//change_screen();
 	//change();
 	//back_screen();
@@ -29,15 +33,9 @@ int main()
 	//add_menu();
 	//ready_number();
 	//choose_fakelove();
-
 	
-	
-	/*get_character(200, bts, 0);
-	printf("되나?\n");
-	system("cls");
-	add_menu();
-	*/
-
+	free(own_blackpink);
+	free(own_bts);
 	system("pause>null");
 
 

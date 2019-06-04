@@ -25,13 +25,14 @@ CH bts[BTS];
 
 
 typedef struct own_member {
+	char name[20];  // ¸â¹ö ÀÌ¸§
 	char **member_image;
 }OWN;
 
 OWN *own_bts;
 OWN *own_blackpink;
 
-void add_c();
+void add_c(OWN *get);
 void c_print();
 void board();
 
@@ -45,26 +46,20 @@ void control_menu(char choice, int *height);
 
 void BP_frame();
 void BP_frame2();
-void BP_Print();
-
 
 
 void RV_frame();
 void RV_frame2();
-void RV_Print();
-
-
 
 
 void BTS_frame();
 void BTS_frame2();
 void BTS_frame3();
-void BTS_Print();
 
 
 void print_question(int x, int y);
 void Info(int i, int x, int y, CH *group);
-void get_character(int score, CH *group, int flag);
+OWN get_character(double score, CH *group, int flag);
 
 //-----------------
 

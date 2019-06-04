@@ -696,70 +696,70 @@ void make_own() {
 	own_bts = (char*)malloc(sizeof(char*) * 7);
 
 	own_blackpink[0].member_image = (char**)calloc(40, sizeof(char*));
-	for (int i = 0; i < 40; i++) {
+	for (int i = 0; i < 41; i++) {
 		own_blackpink[0].member_image[i] = (char*)calloc(60, sizeof(char));
 	}
 
 	own_blackpink[1].member_image = (char**)calloc(40, sizeof(char*));
-	for (int i = 0; i < 40; i++) {
+	for (int i = 0; i < 41; i++) {
 		own_blackpink[1].member_image[i] = (char*)calloc(60, sizeof(char));
 	}
 
 	own_blackpink[2].member_image = (char**)calloc(40, sizeof(char*));
-	for (int i = 0; i < 40; i++) {
+	for (int i = 0; i < 41; i++) {
 		own_blackpink[2].member_image[i] = (char*)calloc(60, sizeof(char));
 	}
 
 	own_blackpink[3].member_image = (char**)calloc(40, sizeof(char*));
-	for (int i = 0; i < 40; i++) {
+	for (int i = 0; i < 41; i++) {
 		own_blackpink[3].member_image[i] = (char*)calloc(60, sizeof(char));
 	}
 
 	// ---------- ¹æÅº
 	
 		own_bts[0].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[0].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 	
 		own_bts[1].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[1].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[2].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[2].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[3].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[3].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[4].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[4].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[5].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[5].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[6].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[6].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 		own_bts[7].member_image = (char**)calloc(40, sizeof(char*));
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 41; i++) {
 			own_bts[7].member_image[i] = (char*)calloc(60, sizeof(char));
 		}
 
 }
 
-void get_character(int score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ È¹µæ Á¡¼ö / group´Â aus±×·ì ±¸Á¶Ã¼ / flag´Â ¹æÅºÀÎÁö ºíÇÎÀÎÁö
+OWN get_character(double score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ È¹µæ Á¡¼ö / group´Â aus±×·ì ±¸Á¶Ã¼ / flag´Â ¹æÅºÀÎÁö ºíÇÎÀÎÁö
 
 	
 	switch (flag) {
@@ -768,21 +768,29 @@ void get_character(int score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ È¹
 			for (int k = 0; k < 40; k++) {
 				own_blackpink[0].member_image[k] = blackpink[0].member_image[k];
 			}
+			strcpy(own_blackpink[0].name, blackpink[0].name);
+			return own_blackpink[0];
 		}
 		else if (score >= 0 && score < 450) {
 			for (int k = 0; k < 40; k++) {
 				own_blackpink[1].member_image[k] = blackpink[1].member_image[k];
 			}
+			strcpy(own_blackpink[1].name, blackpink[1].name);
+			return own_blackpink[1];
 		}
 		else if (score >= 450 && score < 900) { 
 			for (int k = 0; k < 40; k++) {
 				own_blackpink[2].member_image[k] = blackpink[2].member_image[k];
 			}
+			strcpy(own_blackpink[2].name, blackpink[2].name);
+			return own_blackpink[2];
 		}
 		else if (score >= 900) {
 			for (int k = 0; k < 40; k++) {
 				own_blackpink[3].member_image[k] = blackpink[3].member_image[k];
 			}
+			strcpy(own_blackpink[3].name, blackpink[3].name);
+			return own_blackpink[3];
 		}
 	}
 	case 1: { // ¹æÅº. Áö¹Î½´°¡ºßÁ¦ÀÌÈ©Á¤±¹RMÁø
@@ -790,36 +798,50 @@ void get_character(int score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ È¹
 			for (int k = 0; k < 40; k++) {
 				own_bts[0].member_image[k] = bts[0].member_image[k];
 			}
+			strcpy(own_bts[0].name, bts[0].name);
+			return own_bts[0];
 		}
 		else if (score >= 0 && score < 280) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[1].member_image[k] = bts[1].member_image[k];
 			}
+			strcpy(own_bts[1].name, bts[1].name);
+			return own_bts[1];
 		}
 		else if (score >= 280 && score < 560) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[2].member_image[k] = bts[2].member_image[k];
 			}
+			strcpy(own_bts[2].name, bts[2].name);
+			return own_bts[2];
 		}
 		else if (score >= 560 && score < 840) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[3].member_image[k] = bts[3].member_image[k];
 			}
+			strcpy(own_bts[3].name, bts[3].name);
+			return own_bts[3];
 		}
 		else if (score >= 840 && score < 1120) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[4].member_image[k] = bts[4].member_image[k];
 			}
+			strcpy(own_bts[4].name, bts[4].name);
+			return own_bts[4];
 	}
 		else if (score >= 1120 && score < 1400) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[5].member_image[k] = bts[5].member_image[k];
 			}
+			strcpy(own_bts[5].name, bts[5].name);
+			return own_bts[5];
 		}
 		else if (score >= 1400) {
 			for (int k = 0; k < 40; k++) {
 				own_bts[6].member_image[k] = bts[6].member_image[k];
 			}
+			strcpy(own_bts[6].name, bts[6].name);
+			return own_bts[6];
 		}
 	}
 	}
