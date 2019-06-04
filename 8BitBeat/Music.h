@@ -21,6 +21,7 @@ music RedFlavor;
 music FakeLove;
 music DDuduDDudu;
 
+int musicFlag;
 
 void choose_music();
 void default_screen();
@@ -29,7 +30,6 @@ void choose_fakelove();
 void choose_dddd();
 
 void music_comeon();
-void equalizer();
 void draw_equalizer(int *equalizer_count);
 
 

@@ -1,22 +1,58 @@
-﻿  own_character.c
+﻿  Character.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(469): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(479): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\character.c(489): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+  Esc.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\esc.c(42): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+  Menu.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(88): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(114): warning C4013: 'test'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(193): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(210): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\menu.c(219): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+  Title_Print.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\title_print.c(72): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\title_print.c(74): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+  board.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\board.c(9): warning C4013: 'gotoxy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  ingame.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(119): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(139): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(114): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(459): note: 'kbhit' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(116): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(175): warning C4098: 'over_check': 'void' 함수에서 값을 반환하고 있습니다.
+  main.c
+c:\users\administrator\desktop\8bitbeat\8bitbeat\main.c(10): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
+  own_character.c
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(11): warning C4101: 'num2' :참조되지 않은 지역 변수입니다.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(12): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(121): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
 c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(195): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(262): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(267): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(381): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(390): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(435): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(448): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(517): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(534): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(582): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(603): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(650): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(676): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 'getch' 선언을 참조하십시오.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(665): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
-c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(666): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(695): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
+c:\users\administrator\desktop\8bitbeat\8bitbeat\own_character.c(696): warning C4133: '=': 'char *'과(와) 'OWN *' 사이의 형식이 호환되지 않습니다.
+  코드를 생성하고 있습니다...
+c:\users\administrator\desktop\8bitbeat\8bitbeat\ingame.c(141): warning C4716: 'print_map': 값을 반환해야 합니다.
   8BitBeat.vcxproj -> C:\Users\Administrator\Desktop\8bitbeat\x64\Debug\8BitBeat.exe

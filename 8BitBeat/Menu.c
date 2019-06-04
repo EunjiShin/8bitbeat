@@ -4,40 +4,40 @@
 
 void M_line_Print()		// menu box 출력
 {
-	system("mode con: cols=135 lines=36");
-	gotoxy(36, 10);
+	system("mode con: cols=180 lines=50");
+	gotoxy(59, 18);
 	printf("┌────────────────────────────────────────────────────────────┐\n");
-	gotoxy(36, 11);
+	gotoxy(59, 19);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 12);
+	gotoxy(59, 20);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 13);
+	gotoxy(59, 21);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 14);
+	gotoxy(59, 22);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 15);
+	gotoxy(59, 23);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 16);
+	gotoxy(59, 24);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 17);
+	gotoxy(59, 25);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 18);
+	gotoxy(59, 26);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 19);
+	gotoxy(59, 27);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 20);
+	gotoxy(59, 28);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 21);
+	gotoxy(59, 29);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 22);
+	gotoxy(59, 30);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 23);
+	gotoxy(59, 31);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 24);
+	gotoxy(59, 32);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 25);
+	gotoxy(59, 33);
 	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
-	gotoxy(36, 26);
+	gotoxy(59, 34);
 	printf("└────────────────────────────────────────────────────────────┘\n");
 }
 
@@ -47,11 +47,11 @@ void M_key(char key, int *x1, int *y1)	// menu에서 동작키
 	{
 	case UP:
 		*y1 = *y1 - 4;
-		if (*y1 < 12) *y1 = 12;	// menu 1번보다 위로 움직이지 않도록 고정
+		if (*y1 < 20) *y1 = 20;	// menu 1번보다 위로 움직이지 않도록 고정
 		break;
 	case DOWN:
 		*y1 = *y1 + 4;
-		if (*y1 > 24) *y1 = 24;	// menu 5번보다 아래로 움직이지 않도록 고정
+		if (*y1 > 32) *y1 = 32;	// menu 5번보다 아래로 움직이지 않도록 고정
 		break;
 	default: return;
 	}
@@ -59,28 +59,28 @@ void M_key(char key, int *x1, int *y1)	// menu에서 동작키
 
 void M_print()	// menu 프린트
 {
-	gotoxy(61, 12);
-	printf("1. 게임 설명\n\n");
-	gotoxy(61, 16);
-	printf("2. 게임 시작\n\n");
-	gotoxy(60, 20);
-	printf("3. 캐릭터 보기\n\n");
-	gotoxy(61, 24);
-	printf("4. 게임 종료\n");
+	gotoxy(84, 20);
+	printf("1. 게임 설명");
+	gotoxy(84, 24);
+	printf("2. 게임 시작");
+	gotoxy(84, 28);
+	printf("3. 캐릭터 보기");
+	gotoxy(84, 32);
+	printf("4. 게임 종료");
 }
 
 int M_move_arrow()			// 화살표 동작 중 Enter 눌리면 menu값 반환
 {
 	char menu = 0, ch;		// menu 0이면 오류, 키보드 입력받을 ch
-	int x = 58, y = 24;		// 초기의 "▶" 위치 지정
+	int x = 80, y = 20;		// 초기의 "▶" 위치 지정
 	while (1)
 	{
 		switch (y)					// y값에 따라 menu값 결정
 		{
-		case 12: menu = 1; break;
-		case 16: menu = 2; break;
-		case 20: menu = 3; break;
-		case 24: menu = 4; break;
+		case 20: menu = 1; break;
+		case 24: menu = 2; break;
+		case 28: menu = 3; break;
+		case 32: menu = 4; break;
 		default: printf("Error!\n"); exit(1);
 		}
 		gotoxy(x, y);
@@ -111,14 +111,14 @@ void Menu()
 			Print_info();
 			break;
 		case 2:
-			Start_Game();
+			test();
 			break;
 		case 3:
-			Print_character();
+			add_menu();
 			break;
 		case 4:
 			system("cls");
-			gotoxy(60, 19);
+			gotoxy(85, 25);
 			printf("게임을 종료합니다.");
 			Sleep(900);
 			system("cls");
@@ -128,39 +128,87 @@ void Menu()
 }
 void Print_info()
 {
-	gotoxy(38, 10);
-	printf("아이돌이 되고 싶은 ● ■ ▲ ^ * 기호들 ...");
-	gotoxy(38, 12);
-	printf("-------------------------------------------------------");
-	gotoxy(38, 15);
+	gotoxy(54, 16);
+	printf("@=========================================================================@");
+	gotoxy(54, 17);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 18);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 19);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 20);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 21);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 22);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 23);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 24);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 25);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 26);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 27);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 28);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 29);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 30);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 31);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 32);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 33);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 34);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 35);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 36);
+	printf("∥                                                                       ∥");
+	gotoxy(54, 37);
+	printf("@=========================================================================@");
+
+
+	gotoxy(58, 18);
+	printf("아이돌이 되고 싶은 ● ■ ▲ ★ ♣ ♥ ◆ 기호들 ...");
+	gotoxy(58, 20);
+	printf("-------------------------------------------------------------------");
+	gotoxy(58, 23);
 	printf("리듬에 맞춰");
-	gotoxy(38, 17);
+	gotoxy(58, 25);
 	printf("달리기를 완주하여 아이돌 멤버를 모두 모아보세요!");
-	gotoxy(38, 19);
+	gotoxy(58, 27);
 	printf("내가 받은 점수로 기호들이 성장할 수 있는 아이돌이 결정됩니다.");
-	gotoxy(38, 21);
+	gotoxy(58, 29);
 	printf("간단한 조작과 　　　을 이용한 전략적 점수 조절!");
-	gotoxy(38, 23);
-	printf("● ■ ▲ ^ * 가 열심히 달려 아이돌이 될 수 있게 도와주세요!");
+	gotoxy(58, 31);
+	printf("● ■ ▲ ★ ♣ ♥ ◆ 가 열심히 달려 아이돌이 될 수 있게 도와주세요!");
+
 
 	while (!kbhit())
 	{
-		gotoxy(51, 15);
+		gotoxy(71, 23);
 		printf("▶SPACE◀");
-		gotoxy(52, 21);
+		gotoxy(72, 29);
 		printf("[트랩]");
-		gotoxy(82, 27);
+		gotoxy(110, 35);
 		printf("Press Enter...");
 		Sleep(500);
-		gotoxy(51, 15);
+		gotoxy(71, 23);
 		printf("          ");
-		gotoxy(52, 21);
+		gotoxy(72, 29);
 		printf("      ");
-		gotoxy(82, 27);
+		gotoxy(110, 35);
 		printf("               ");
 		Sleep(300);
 	}
 	getch();	// 다음 동작을 위해 buffer 버리기
+
 }
 void Start_Game()
 {
@@ -171,7 +219,7 @@ void Start_Game()
 		ch = getch();
 		switch (ch)
 		{
-		case LEFT: 
+		case LEFT:
 			music--;
 			break;
 		case RIGHT:
@@ -185,10 +233,6 @@ void Start_Game()
 			break;
 		}
 	} while (ch != ESC);
-}
-void Print_Lank()
-{
-
 }
 void Print_character()
 {

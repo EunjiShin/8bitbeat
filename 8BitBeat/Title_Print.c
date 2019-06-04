@@ -2,38 +2,38 @@
 
 void Title()	// 콘솔 중앙에 8BIT BEAT 출력
 {
-	gotoxy(48, 10);
+	gotoxy(71, 13);
 	printf("　■■　　■■■　　■■■　■■■■■\n");
-	gotoxy(48, 11);
+	gotoxy(71, 14);
 	printf("■　　■　■　■　　　■　　　　■\n");
-	gotoxy(48, 12);
+	gotoxy(71, 15);
 	printf("■　　■　■　■　　　■　　　　■\n");
-	gotoxy(48, 13);
+	gotoxy(71, 16);
 	printf("　■■　　■■■■　　■　　　　■\n");
-	gotoxy(48, 14);
+	gotoxy(71, 17);
 	printf("■　　■　■　　■　　■　　　　■\n");
-	gotoxy(48, 15);
+	gotoxy(71, 18);
 	printf("■　　■　■　　■　　■　　　　■\n");
-	gotoxy(48, 16);
+	gotoxy(71, 19);
 	printf("　■■　　■■■■　■■■　　　■\n");
-	gotoxy(48, 20);
+	gotoxy(71, 23);
 	printf("■■■　　■■■■　　■■　　■■■■■\n");
-	gotoxy(48, 21);
+	gotoxy(71, 24);
 	printf("■　■　　■　　　　■　　■　　　■\n");
-	gotoxy(48, 22);
+	gotoxy(71, 25);
 	printf("■　■　　■　　　　■　　■　　　■\n");
-	gotoxy(48, 23);
+	gotoxy(71, 26);
 	printf("■■■■　■■■■　■■■■　　　■\n");
-	gotoxy(48, 24);
+	gotoxy(71, 27);
 	printf("■　　■　■　　　　■　　■　　　■\n");
-	gotoxy(48, 25);
+	gotoxy(71, 28);
 	printf("■　　■　■　　　　■　　■　　　■\n");
-	gotoxy(48, 26);
+	gotoxy(71, 29);
 	printf("■■■■　■■■■　■　　■　　　■\n");
 }
 void Title_Print()
 {
-	system("mode con: cols=135 lines=36");	// 콘솔 크기 가로 135 세로 36
+	system("mode con: cols=180 lines=50");	// 콘솔 크기 가로 180 세로 50
 
 	SetColor(8);			/*38 ~ 61    Title이 깜빡이는 효과*/
 	Title();
@@ -63,10 +63,10 @@ void Title_Print()
 	while (1)	// 사용자가 키보드를 입력할 때 까지 "press any key to start" 깜빡거리기
 	{
 		SetColor(7);
-		gotoxy(52, 32);
+		gotoxy(76, 35);
 		printf("▶ Press any key to start ◀");
 		Sleep(600);
-		gotoxy(52, 32);
+		gotoxy(76, 35);
 		printf("                             ");
 		Sleep(600);
 		if (kbhit())	// 사용자 키 입력

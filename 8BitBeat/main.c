@@ -17,6 +17,8 @@ int main()
 
 	CursorView(0);
 	make_own();
+	Title_Print();
+	Menu();
 	//change_screen();
 	//change();
 	//back_screen();
@@ -30,13 +32,14 @@ int main()
 
 	
 	
-	get_character(200, bts, 0);
+	/*get_character(200, bts, 0);
 	printf("µÇ³ª?\n");
 	system("cls");
 	add_menu();
-	//BP_frame();
+	*/
 
-	
+	system("pause>null");
+
 
 	return 0;
 }

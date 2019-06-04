@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hash.c" />
+    <ClCompile Include="ingame.c" />
     <ClCompile Include="own_character.c" />
     <ClCompile Include="board.c" />
     <ClCompile Include="change.c" />
@@ -167,9 +167,9 @@
   <ItemGroup>
     <ClInclude Include="Character.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="ingame.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Music.h" />
-    <ClInclude Include="hash.h" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\DDDD.wav" />

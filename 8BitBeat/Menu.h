@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Common.h"
+#include "Character.h"
 
 void Title();
 void Title_Print();

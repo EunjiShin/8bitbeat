@@ -11,80 +11,80 @@ void add_menu() {
 	int num2;
 	int key;
 
-			Print_Box(); // 메뉴박스
-			Print_Menu();  // 메뉴 출력
-			num = Choice_Menu(); // 위치 이동
-			switch (num)	// 각 메뉴 선택에 맞는 동작 실행
-			{
-			case 1:
-					BP_frame();
-				break;
-			case 2:
-				RV_frame();
-				break;
-			case 3:
-				BTS_frame();
-				break;
-			case 4:   // 종료
-				system("cls");
-				gotoxy(60, 19);
-				printf("게임을 종료합니다.");
-				Sleep(900);
-				system("cls");
-				exit(1);
-			}
-			
-	
+	Print_Box(); // 메뉴박스
+	Print_Menu();  // 메뉴 출력
+	num = Choice_Menu(); // 위치 이동
+	switch (num)	// 각 메뉴 선택에 맞는 동작 실행
+	{
+	case 1:
+		BP_frame();
+		break;
+	case 2:
+		RV_frame();
+		break;
+	case 3:
+		BTS_frame();
+		break;
+	case 4:   // 종료
+		system("cls");
+		gotoxy(85, 25);
+		printf("게임을 종료합니다.");
+		Sleep(900);
+		system("cls");
+		exit(1);
+	}
 }
 
 void Print_Box() {
+
 	system("mode con: cols=180 lines=50");
-	gotoxy(40, 10);
-	printf("┌────────────────────────────────────────────────────┐\n");
-	gotoxy(40, 11);
-	printf("│　　　　　　　　　　　　　　　   　　　　　　　     │\n");
-	gotoxy(40, 12);
-	printf("│　　　 　　　　　　　　　　   　　　　　　　　　    │\n");
-	gotoxy(40, 13);
-	printf("│　　     　　　　　　　   　　　　　　　　　　　　　│\n");
-	gotoxy(40, 14);
-	printf("│　　　　     　　　   　　　　　　　　　　　　　　　│\n");
-	gotoxy(40, 15);
-	printf("│　　　　　 　       　　　　　　　 　　　　　　　　 │\n");
-	gotoxy(40, 16);
-	printf("│　　　　　　    　　    　　　　　 　　　　　　　　 │\n");
-	gotoxy(40, 17);
-	printf("│　　　　   　 　　　　　    　　　　　　　　　　　　│\n");
-	gotoxy(40, 18);
-	printf("│　　   　　　　 　　　　　　    　　　　　　　　　　│\n");
-	gotoxy(40, 19);
-	printf("│　　　 　　　　　 　　　 　　　    　 　　　    　　│\n");
-	gotoxy(40, 20);
-	printf("│　　　　　　　　　 　　　　　　　    　　   　　　　│\n");
-	gotoxy(40, 21);
-	printf("│　　　　　 　　　　　 　  　　　　　       　 　　　│\n");
-	gotoxy(40, 22);
-	printf("│　　　　　　　　　　　 　　　　　　　　　    　   　│\n");
-	gotoxy(40, 23);
-	printf("│　　　　　　　　　　　　 　　　　　　　　　   　    │\n");
-	gotoxy(40, 24);
-	printf("│　　　　　　　　　　　　　 　　　　　　   　　    　│\n");
-	gotoxy(40, 25);
-	printf("│　　　　　　　　　　　　　　 　　　   　　　　　    │\n");
-	gotoxy(40, 26);
-	printf("└────────────────────────────────────────────────────┘\n");
+	gotoxy(59, 18);
+	printf("┌────────────────────────────────────────────────────────────┐\n");
+	gotoxy(59, 19);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 20);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 21);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 22);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 23);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 24);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 25);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 26);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 27);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 28);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 29);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 30);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 31);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 32);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 33);
+	printf("│　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　│\n");
+	gotoxy(59, 34);
+	printf("└────────────────────────────────────────────────────────────┘\n");
 
 }
 
 
+
 void Print_Menu() {
-	gotoxy(64, 14);
+	gotoxy(84, 20);
 	printf("1. 블랙핑크  \n\n");
-	gotoxy(64, 17);
+	gotoxy(84, 24);
 	printf("2. 레드벨벳  \n\n");
-	gotoxy(64, 20);
+	gotoxy(84, 28);
 	printf("3. 방탄소년단   \n\n");
-	gotoxy(64, 23);
+	gotoxy(84, 32);
 	printf("4. 종료   \n\n");
 }
 
@@ -92,12 +92,12 @@ void control_menu(char choice, int *height) {
 	switch (choice)
 	{
 	case UP:
-		*height = *height - 3;
-		if (*height < 14) *height = 14;	// menu 1번보다 위로 움직이지 않도록 고정
+		*height = *height - 4;
+		if (*height < 20) *height = 20;	// menu 1번보다 위로 움직이지 않도록 고정
 		break;
 	case DOWN:
-		*height = *height + 3;
-		if (*height > 23) *height = 23;	// menu 5번보다 아래로 움직이지 않도록 고정
+		*height = *height + 4;
+		if (*height > 32) *height = 32;	// menu 5번보다 아래로 움직이지 않도록 고정
 		break;
 	default: return;
 	}
@@ -105,15 +105,15 @@ void control_menu(char choice, int *height) {
 
 int Choice_Menu() {
 	char menu = 0, ch;		
-	int x = 58, y = 14;		
+	int x = 80, y = 20;		
 	while (1)
 	{
 		switch (y)					
 		{
-		case 14: menu = 1; break;
-		case 17: menu = 2; break;
-		case 20: menu = 3; break;
-		case 23: menu = 4; break;
+		case 20: menu = 1; break;
+		case 24: menu = 2; break;
+		case 28: menu = 3; break;
+		case 232: menu = 4; break;
 		default: printf("Error!\n"); exit(1);
 		}
 		gotoxy(x, y);
@@ -195,7 +195,12 @@ void BP_frame() {
 		key = getch();
 		if (key == RIGHT) {
 			BP_frame2();
+			return;
 		}
+		if (key == ESC) {
+			return;
+		}
+
 	}
 
 
@@ -262,6 +267,10 @@ void BP_frame2() {
 		key = getch();
 		if (key == LEFT) {
 			BP_frame();
+			return;
+		}
+		if (key == ESC) {
+			return;
 		}
 	}
 
@@ -381,6 +390,10 @@ void RV_frame() {
 		key = getch();
 		if (key == RIGHT) {
 			RV_frame2();
+			return;
+		}
+		else if (key == ESC) {
+			return;
 		}
 	}
 
@@ -435,6 +448,10 @@ void RV_frame2(){
 		key = getch();
 		if (key == LEFT) {
 			RV_frame();
+			return;
+		}
+		else if (key == ESC) {
+			return;
 		}
 	}
 
@@ -517,6 +534,10 @@ void BTS_frame() {
 		key = getch();
 		if (key == RIGHT) {
 			BTS_frame2();
+			return;
+		}
+		else if (key == ESC) {
+			return;
 		}
 	}
 
@@ -582,9 +603,14 @@ void BTS_frame2() {
 		key = getch();
 		if (key == LEFT) {
 			BTS_frame();
+			return;
 		}
 		if (key == RIGHT) {
 			BTS_frame3();
+			return;
+		}
+		else if (key == ESC) {
+			return;
 		}
 	}
 
@@ -650,6 +676,10 @@ void BTS_frame3() {
 		key = getch();
 		if (key == LEFT) {
 			BTS_frame2();
+			return;
+		}
+		else if (key == ESC) {
+			return;
 		}
 	}
 
