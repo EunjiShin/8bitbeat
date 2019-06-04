@@ -31,3 +31,48 @@ void CursorView(char show) {
 
 	SetConsoleCursorInfo(hConsole, &ConsoleCursor);
 }
+
+int GetFontSize(HANDLE windowHandle, COORD *size)
+{
+	CONSOLE_FONT_INFOEX font = { sizeof(CONSOLE_FONT_INFOEX) };
+
+	if (!GetCurrentConsoleFontEx(windowHandle, 0, &font))
+	{
+		return 0;
+	}
+
+	*size = font.dwFontSize;
+
+	return 1;
+}
+
+int SetFontSize(HANDLE windowHandle, COORD size)
+{
+	CONSOLE_FONT_INFOEX font = { sizeof(CONSOLE_FONT_INFOEX) };
+
+	if (!GetCurrentConsoleFontEx(windowHandle, 0, &font))
+	{
+		return 0;
+	}
+
+	font.dwFontSize = size;
+
+	if (!SetCurrentConsoleFontEx(windowHandle, 0, &font))
+	{
+		return 0;
+	}
+
+	return 1;
+}
+
+void changeFsize(int fsize) {
+	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD size;
+
+	if (GetFontSize(h, &size))
+	{
+		size.X -= (SHORT)(size.X * fsize);
+		size.Y -= (SHORT)(size.Y * fsize);
+		SetFontSize(h, size);
+	}
+}

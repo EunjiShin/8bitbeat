@@ -24,7 +24,10 @@ void back_screen();
 void back_screen2();
 void change();
 unsigned _stdcall Thread_change_screen(void *arg);
-void ready_number();
+void ready_number(); 
 void ready_start();
 
 void CursorView(char show);
+int GetFontSize(HANDLE windowHandle, COORD *size);
+int SetFontSize(HANDLE windowHandle, COORD size);
+void changeFsize(int fsize);

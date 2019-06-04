@@ -1,12 +1,13 @@
-#include "Title.h"
+
 #include "Common.h"
 #include "Menu.h"
 #include "Music.h"
-#include "Title.h"
+
 #include "Character.h"
 
 int main()
 {
+	char key;
 	/*HideCursor();
 	Title_Print();
 	Menu();
@@ -15,6 +16,7 @@ int main()
 	images(0, 0, "images");*/
 
 	CursorView(0);
+	make_own();
 	//change_screen();
 	//change();
 	//back_screen();
@@ -23,8 +25,18 @@ int main()
 	choose_music();*/
 	//music_comeon();
 	//add_menu();
-	ready_number();
-	system("pause>null");
+	//ready_number();
+	//choose_fakelove();
+
+	
+	
+	get_character(200, bts, 0);
+	printf("µÇ³ª?\n");
+	system("cls");
+	add_menu();
+	//BP_frame();
+
+	
 
 	return 0;
 }

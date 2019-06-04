@@ -101,6 +101,7 @@ void choose_redflavor() {
 }
 void choose_fakelove() {
 	PlaySound(TEXT(Fake_love), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+
 	while (1) {
 		gotoxy(71, 27);
 		printf("%s", FakeLove.title);
@@ -115,9 +116,10 @@ void choose_fakelove() {
 
 			return;  // 만약 한번 더 이동하면 함수 끝
 		}
-
-
+		
+		
 		Sleep(3000);
+
 
 		break;
 	}
@@ -221,4 +223,4 @@ void music_comeon() {
 		system("cls");
 		printf("안녕안녕\n");
 	}
-}
+}  

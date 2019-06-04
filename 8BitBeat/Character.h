@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <conio.h>
+#include <string.h>
 
 #define BlackPink 4
 #define Redvelvet 5
@@ -22,13 +23,20 @@ CH blackpink[BlackPink];
 CH redvelvet[Redvelvet];
 CH bts[BTS];
 
+
+typedef struct own_member {
+	char **member_image;
+}OWN;
+
+OWN *own_bts;
+OWN *own_blackpink;
+
 void add_c();
 void c_print();
 void board();
 
 // --------------own_character.c---------------
 void add_menu();
-void Own_Character();
 void Print_Box(); // 메뉴박스
 void Print_Menu();  // 메뉴 출력
 int Choice_Menu();
@@ -56,3 +64,8 @@ void BTS_Print();
 
 void print_question(int x, int y);
 void Info(int i, int x, int y, CH *group);
+void get_character(int score, CH *group, int flag);
+
+//-----------------
+
+void make_own();

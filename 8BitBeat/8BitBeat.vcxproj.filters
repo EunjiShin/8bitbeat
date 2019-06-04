@@ -48,11 +48,11 @@
     <ClCompile Include="own_character.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="hash.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Title.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -63,6 +63,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Music.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

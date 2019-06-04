@@ -46,11 +46,11 @@ void M_key(char key, int *x1, int *y1)	// menu에서 동작키
 	switch (key)
 	{
 	case UP:
-		*y1 = *y1 - 3;
+		*y1 = *y1 - 4;
 		if (*y1 < 12) *y1 = 12;	// menu 1번보다 위로 움직이지 않도록 고정
 		break;
 	case DOWN:
-		*y1 = *y1 + 3;
+		*y1 = *y1 + 4;
 		if (*y1 > 24) *y1 = 24;	// menu 5번보다 아래로 움직이지 않도록 고정
 		break;
 	default: return;
@@ -61,14 +61,12 @@ void M_print()	// menu 프린트
 {
 	gotoxy(61, 12);
 	printf("1. 게임 설명\n\n");
-	gotoxy(61, 15);
+	gotoxy(61, 16);
 	printf("2. 게임 시작\n\n");
-	gotoxy(61, 18);
-	printf("3. 랭킹 보기\n\n");
-	gotoxy(60, 21);
-	printf("4. 캐릭터 보기\n\n");
+	gotoxy(60, 20);
+	printf("3. 캐릭터 보기\n\n");
 	gotoxy(61, 24);
-	printf("5. 게임 종료\n");
+	printf("4. 게임 종료\n");
 }
 
 int M_move_arrow()			// 화살표 동작 중 Enter 눌리면 menu값 반환
@@ -80,10 +78,9 @@ int M_move_arrow()			// 화살표 동작 중 Enter 눌리면 menu값 반환
 		switch (y)					// y값에 따라 menu값 결정
 		{
 		case 12: menu = 1; break;
-		case 15: menu = 2; break;
-		case 18: menu = 3; break;
-		case 21: menu = 4; break;
-		case 24: menu = 5; break;
+		case 16: menu = 2; break;
+		case 20: menu = 3; break;
+		case 24: menu = 4; break;
 		default: printf("Error!\n"); exit(1);
 		}
 		gotoxy(x, y);
@@ -117,12 +114,9 @@ void Menu()
 			Start_Game();
 			break;
 		case 3:
-			Print_Lank();
-			break;
-		case 4:
 			Print_character();
 			break;
-		case 5:
+		case 4:
 			system("cls");
 			gotoxy(60, 19);
 			printf("게임을 종료합니다.");

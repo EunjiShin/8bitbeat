@@ -1,6 +1,10 @@
 #include "Character.h"
 #include "Common.h"
 #include "Menu.h"
+#include <stdio.h>
+
+
+
 
 void add_menu() {
 	int num;
@@ -155,21 +159,37 @@ void BP_frame() {
 	gotoxy(176, 25);
 	printf(">");
 
-	for (k = 0; k < 40; k++) {
-		gotoxy(30, height);
-		printf("%s", blackpink[3].member_image[k]);
-		height++;
+
+	if (own_blackpink[0].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(30, height);
+			printf("%s", own_blackpink[0].member_image[k]);
+			height++;
+		}
+		Info(0, 50, 40, blackpink);
 	}
-	Info(0, 50, 40, blackpink);
+	else {
+		height = 13;
+		print_question(30, height);
+	}
 
 	height = 13;
 
-	for (k = 0; k < 40; k++) {
-		gotoxy(120, height);
-		printf("%s", blackpink[4].member_image[k]);
-		height++;
+
+	if (own_blackpink[1].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(120, height);
+			printf("%s", own_blackpink[1].member_image[k]);
+			height++;
+		}
+		Info(1, 140, 40, blackpink);
 	}
-	Info(1, 140, 40, blackpink);
+
+	else {
+		height = 13;
+		print_question(120, height);
+	}
+
 
 	while (1) {
 		key = getch();
@@ -209,16 +229,33 @@ void BP_frame2() {
 	gotoxy(176, 25);
 	printf(">");
 
-	for (k = 0; k < 40; k++) {
-		gotoxy(30, height);
-		printf("%s", blackpink[2].member_image[k]);
-		height++;
+		if (own_blackpink[2].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(30, height);
+			printf("%s", own_blackpink[2].member_image[k]);
+			height++;
+		}
+		Info(2, 50, 40, blackpink);
 	}
-	Info(3, 50, 40, blackpink);
 
-	height = 13;
+		else {
+		height = 13;
+		print_question(30, height);
+	}
 
-	print_question(120, height);
+		if (own_blackpink[3].member_image[9][12] != 0) {
+			for (k = 0; k < 40; k++) {
+				gotoxy(120, height);
+				printf("%s", own_blackpink[3].member_image[k]);
+				height++;
+			}
+			Info(3, 140, 40, blackpink);
+		}
+		else {
+			height = 13;
+			print_question(120, height);
+		}
+
 
 
 	while (1) {
@@ -314,7 +351,7 @@ void RV_frame() {
 	gotoxy(176, 25);
 	printf(">");
 
-
+	
 	for (k = 0; k < 40; k++) {
 		gotoxy(17, height);
 		printf("%s", redvelvet[0].member_image[k]);
@@ -370,6 +407,7 @@ void RV_frame2(){
 			gotoxy(j * 89 + 1, i + 2);
 			printf("||");
 		}
+
 	}
 
 	gotoxy(4, 25);
@@ -433,29 +471,47 @@ void BTS_frame() {
 	printf("<");
 	gotoxy(176, 25);
 	printf(">");
-
-	for (k = 0; k < 40; k++) {
-		gotoxy(17, height);
-		printf("%s", bts[0].member_image[k]);
-		height++;
+	
+	 if (own_bts[0].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(17, height);
+			printf("%s", own_bts[0].member_image[k]);
+			height++;
+		}
+		Info(0, 17, 40, bts);
 	}
-	Info(0, 30, 40, bts);
-
-	height = 15;
-	for (k = 0; k < 40; k++) {
-		gotoxy(70, height);
-		printf("%s", bts[1].member_image[k]);
-		height++;
+	 else {
+		height = 13;
+		print_question(10, height);
 	}
-	Info(1, 90, 40, bts);
 
-	height = 15;
-	for (k = 0; k < 40; k++) {
-		gotoxy(128, height);
-		printf("%s", bts[2].member_image[k]);
-		height++;
-	}
-	Info(2, 150, 40, bts);
+	 if(own_bts[1].member_image[9][12] != 0){
+		 height = 15;
+		 for (k = 0; k < 40; k++) {
+			 gotoxy(70, height);
+			 printf("%s", own_bts[1].member_image[k]);
+			 height++;
+		 }
+		 Info(1, 90, 40, bts);
+	 }
+	 else {
+		 height = 15;
+		 print_question(70, height);
+	 }
+
+	 if(own_bts[2].member_image[9][12] != 0){
+		 height = 15;
+		 for (k = 0; k < 40; k++) {
+			 gotoxy(128, height);
+			 printf("%s", own_bts[2].member_image[k]);
+			 height++;
+		 }
+		 Info(2, 150, 40, bts);
+	 }
+	 else {
+		 height = 15;
+		 print_question(128, height);
+	 }
 
 	while (1) {
 		key = getch();
@@ -494,21 +550,32 @@ void BTS_frame2() {
 	gotoxy(176, 25);
 	printf(">");
 
-	for (k = 0; k < 40; k++) {
-		gotoxy(25, height);
-		printf("%s", bts[3].member_image[k]);
-		height++;
+	if (own_bts[3].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(25, height);
+			printf("%s", own_bts[3].member_image[k]);
+			height++;
+		}
+		Info(3, 45, 40, bts);
 	}
-	Info(3, 45, 40, bts);
+	else {
+		height = 15;
+		print_question(25, height);
+	}
 
 	height = 13;
-
-	for (k = 0; k < 40; k++) {
-		gotoxy(120, height);
-		printf("%s", bts[4].member_image[k]);
-		height++;
+	if (own_bts[4].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(120, height);
+			printf("%s", own_bts[4].member_image[k]);
+			height++;
+		}
+		Info(4, 135, 40, bts);
 	}
-	Info(4, 135, 40, bts);
+	else {
+		height = 13;
+		print_question(120, height);
+	}
 
 
 	while (1) {
@@ -552,21 +619,32 @@ void BTS_frame3() {
 	gotoxy(176, 25);
 	printf(">");
 
-	for (k = 0; k < 40; k++) {
-		gotoxy(30, height);
-		printf("%s", bts[5].member_image[k]);
-		height++;
+	if (own_bts[5].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(30, height);
+			printf("%s", own_bts[5].member_image[k]);
+			height++;
+		}
+		Info(5, 45, 40, bts);
 	}
-	Info(5, 45, 40, bts);
+	else {
+		height = 15;
+		print_question(30, height);
+	}
 
 	height = 13;
-
-	for (k = 0; k < 40; k++) {
-		gotoxy(120, height);
-		printf("%s", bts[6].member_image[k]);
-		height++;
+	if (own_bts[6].member_image[9][12] != 0) {
+		for (k = 0; k < 40; k++) {
+			gotoxy(120, height);
+			printf("%s", own_bts[6].member_image[k]);
+			height++;
+		}
+		Info(6, 135, 40, bts);
 	}
-	Info(6, 135, 40, bts);
+	else {
+		height = 13;
+		print_question(120, height);
+	}
 
 	while (1) {
 		key = getch();
@@ -578,7 +656,141 @@ void BTS_frame3() {
 }
 
 
-void Info(int i, int x, int y, CH *group) {
+void Info(int i, int x, int y, CH *group) {  // i는 그룹 구조체에서 몇번째 멤버인지 / X, Y는 좌표 / group는 그룹 구조체
 	gotoxy(x, y + 3);
 	printf("%s", group[i].name);
+}
+
+void make_own() {
+	own_blackpink = (char*)malloc(sizeof(char*) * 4);
+	own_bts = (char*)malloc(sizeof(char*) * 7);
+
+	own_blackpink[0].member_image = (char**)calloc(40, sizeof(char*));
+	for (int i = 0; i < 40; i++) {
+		own_blackpink[0].member_image[i] = (char*)calloc(60, sizeof(char));
+	}
+
+	own_blackpink[1].member_image = (char**)calloc(40, sizeof(char*));
+	for (int i = 0; i < 40; i++) {
+		own_blackpink[1].member_image[i] = (char*)calloc(60, sizeof(char));
+	}
+
+	own_blackpink[2].member_image = (char**)calloc(40, sizeof(char*));
+	for (int i = 0; i < 40; i++) {
+		own_blackpink[2].member_image[i] = (char*)calloc(60, sizeof(char));
+	}
+
+	own_blackpink[3].member_image = (char**)calloc(40, sizeof(char*));
+	for (int i = 0; i < 40; i++) {
+		own_blackpink[3].member_image[i] = (char*)calloc(60, sizeof(char));
+	}
+
+	// ---------- 방탄
+	
+		own_bts[0].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[0].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+	
+		own_bts[1].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[1].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[2].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[2].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[3].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[3].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[4].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[4].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[5].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[5].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[6].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[6].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+		own_bts[7].member_image = (char**)calloc(40, sizeof(char*));
+		for (int i = 0; i < 40; i++) {
+			own_bts[7].member_image[i] = (char*)calloc(60, sizeof(char));
+		}
+
+}
+
+void get_character(int score, CH *group, int flag) { // 해싱적용<< score는 총 획득 점수 / group는 aus그룹 구조체 / flag는 방탄인지 블핑인지
+
+	
+	switch (flag) {
+	case 0: {  // 블핑. 지수제니리사로제
+		if (score < 0) {
+			for (int k = 0; k < 40; k++) {
+				own_blackpink[0].member_image[k] = blackpink[0].member_image[k];
+			}
+		}
+		else if (score >= 0 && score < 450) {
+			for (int k = 0; k < 40; k++) {
+				own_blackpink[1].member_image[k] = blackpink[1].member_image[k];
+			}
+		}
+		else if (score >= 450 && score < 900) { 
+			for (int k = 0; k < 40; k++) {
+				own_blackpink[2].member_image[k] = blackpink[2].member_image[k];
+			}
+		}
+		else if (score >= 900) {
+			for (int k = 0; k < 40; k++) {
+				own_blackpink[3].member_image[k] = blackpink[3].member_image[k];
+			}
+		}
+	}
+	case 1: { // 방탄. 지민슈가뷔제이홉정국RM진
+		if (score < 0) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[0].member_image[k] = bts[0].member_image[k];
+			}
+		}
+		else if (score >= 0 && score < 280) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[1].member_image[k] = bts[1].member_image[k];
+			}
+		}
+		else if (score >= 280 && score < 560) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[2].member_image[k] = bts[2].member_image[k];
+			}
+		}
+		else if (score >= 560 && score < 840) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[3].member_image[k] = bts[3].member_image[k];
+			}
+		}
+		else if (score >= 840 && score < 1120) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[4].member_image[k] = bts[4].member_image[k];
+			}
+	}
+		else if (score >= 1120 && score < 1400) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[5].member_image[k] = bts[5].member_image[k];
+			}
+		}
+		else if (score >= 1400) {
+			for (int k = 0; k < 40; k++) {
+				own_bts[6].member_image[k] = bts[6].member_image[k];
+			}
+		}
+	}
+	}
 }
