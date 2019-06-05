@@ -7,6 +7,7 @@
 
 int main()
 {
+	system("mode con: cols=180 lines=50");
 	char key;
 	/*HideCursor();
 	Title_Print();
@@ -33,9 +34,17 @@ int main()
 	//add_menu();
 	//ready_number();
 	//choose_fakelove();
-	
+
+	/*get_character(560, blackpink, 0);
+	get_character(700, bts, 1);
+	add_menu();
+	*/
+
+	own_blackpink = NULL;
+	own_bts = NULL;
 	free(own_blackpink);
 	free(own_bts);
+
 	system("pause>null");
 
 

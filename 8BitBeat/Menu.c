@@ -99,6 +99,7 @@ int M_move_arrow()			// 화살표 동작 중 Enter 눌리면 menu값 반환
 
 void Menu()
 {
+	system("mode con: cols=180 lines=50");
 	int menu;
 	while (1)
 	{
@@ -236,7 +237,7 @@ void Start_Game()
 }
 void Print_character()
 {
-	system("mode con: cols=135 lines=36");
+	system("mode con: cols=180 lines=50");
 	system("cls");
 
 	PrintBP(0, 5, 5);

@@ -19,6 +19,7 @@ void E_key(char key, int *x1, int *y1)	// ESC 에서 동작키
 
 void ESC_Print()	// ESC menu 프린트
 {
+
 	gotoxy(84, 22);
 	printf("1. 처음으로");
 	gotoxy(84, 28);
@@ -66,7 +67,7 @@ void is_ESC()
 		ingame(musicFlag);
 		break;
 	case 2:
-		Select_Song();
+		Menu();
 		break;
 	}
 }

@@ -113,7 +113,7 @@ int Choice_Menu() {
 		case 20: menu = 1; break;
 		case 24: menu = 2; break;
 		case 28: menu = 3; break;
-		case 232: menu = 4; break;
+		case 32: menu = 4; break;
 		default: printf("Error!\n"); exit(1);
 		}
 		gotoxy(x, y);
@@ -571,7 +571,7 @@ void BTS_frame2() {
 	gotoxy(176, 25);
 	printf(">");
 
-	if (own_bts[3].member_image[9][12] != 0) {
+	if (own_bts[3].member_image[12][9] != 0) {
 		for (k = 0; k < 40; k++) {
 			gotoxy(25, height);
 			printf("%s", own_bts[3].member_image[k]);
@@ -765,28 +765,28 @@ OWN get_character(double score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ 
 	switch (flag) {
 	case 0: {  // ºíÇÎ. Áö¼öÁ¦´Ï¸®»ç·ÎÁ¦
 		if (score < 0) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_blackpink[0].member_image[k] = blackpink[0].member_image[k];
 			}
 			strcpy(own_blackpink[0].name, blackpink[0].name);
 			return own_blackpink[0];
 		}
 		else if (score >= 0 && score < 450) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_blackpink[1].member_image[k] = blackpink[1].member_image[k];
 			}
 			strcpy(own_blackpink[1].name, blackpink[1].name);
 			return own_blackpink[1];
 		}
 		else if (score >= 450 && score < 900) { 
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_blackpink[2].member_image[k] = blackpink[2].member_image[k];
 			}
 			strcpy(own_blackpink[2].name, blackpink[2].name);
 			return own_blackpink[2];
 		}
 		else if (score >= 900) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_blackpink[3].member_image[k] = blackpink[3].member_image[k];
 			}
 			strcpy(own_blackpink[3].name, blackpink[3].name);
@@ -795,49 +795,49 @@ OWN get_character(double score, CH *group, int flag) { // ÇØ½ÌÀû¿ë<< score´Â ÃÑ 
 	}
 	case 1: { // ¹æÅº. Áö¹Î½´°¡ºßÁ¦ÀÌÈ©Á¤±¹RMÁø
 		if (score < 0) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[0].member_image[k] = bts[0].member_image[k];
 			}
 			strcpy(own_bts[0].name, bts[0].name);
 			return own_bts[0];
 		}
 		else if (score >= 0 && score < 280) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[1].member_image[k] = bts[1].member_image[k];
 			}
 			strcpy(own_bts[1].name, bts[1].name);
 			return own_bts[1];
 		}
 		else if (score >= 280 && score < 560) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[2].member_image[k] = bts[2].member_image[k];
 			}
 			strcpy(own_bts[2].name, bts[2].name);
 			return own_bts[2];
 		}
 		else if (score >= 560 && score < 840) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[3].member_image[k] = bts[3].member_image[k];
 			}
 			strcpy(own_bts[3].name, bts[3].name);
 			return own_bts[3];
 		}
 		else if (score >= 840 && score < 1120) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[4].member_image[k] = bts[4].member_image[k];
 			}
 			strcpy(own_bts[4].name, bts[4].name);
 			return own_bts[4];
 	}
 		else if (score >= 1120 && score < 1400) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[5].member_image[k] = bts[5].member_image[k];
 			}
 			strcpy(own_bts[5].name, bts[5].name);
 			return own_bts[5];
 		}
 		else if (score >= 1400) {
-			for (int k = 0; k < 40; k++) {
+			for (int k = 0; k < 41; k++) {
 				own_bts[6].member_image[k] = bts[6].member_image[k];
 			}
 			strcpy(own_bts[6].name, bts[6].name);

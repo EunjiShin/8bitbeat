@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <Windows.h>
+#include <string.h>
 
 #define UP 72
 #define LEFT 75
