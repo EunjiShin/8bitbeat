@@ -1,0 +1,27 @@
+﻿  Select_Music.c
+  image.c
+  Esc.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\esc.c(44): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Common.c
+  Character.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\character.c(469): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\character.c(479): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\character.c(489): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
+  change.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\change.c(20): warning C4098: 'change_screen': 'void' 함수에서 값을 반환하고 있습니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\change.c(54): warning C4013: '_beginthreadex'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  board.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\board.c(9): warning C4013: 'gotoxy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  코드를 생성하고 있습니다...
+  main.c
+  Title_Print.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\title_print.c(72): warning C4013: 'kbhit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\title_print.c(74): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Menu.c
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\menu.c(91): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\menu.c(152): warning C4013: 'kbhit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\menu.c(175): warning C4013: 'default_screen'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\lg\documents\visual studio 2015\projects\8bitbeat\8bitbeat\menu.c(204): warning C4013: 'PrintBP'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  코드를 생성하고 있습니다...
+  8BitBeat.vcxproj -> C:\Users\LG\Documents\Visual Studio 2015\Projects\8BitBeat\Debug\8BitBeat.exe
+  8BitBeat.vcxproj -> C:\Users\LG\Documents\Visual Studio 2015\Projects\8BitBeat\Debug\8BitBeat.pdb (Full PDB)
